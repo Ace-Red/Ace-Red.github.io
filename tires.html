@@ -9,6 +9,9 @@
   </head>
   <body>
     <header class="header">
+      <div class="header-menu">
+        <img style="width: 25px; margin-left: 25px;" src="./images/menu.png" />
+      </div>
       <div class="header-logo">
         <img src="./images/header-logo.svg" alt="logo" />
       </div>
@@ -30,7 +33,7 @@
       </div>
       <div class="navigation-links">
         <a class="navigation-link" href="index.html">Главная</a>
-        <a class="navigation-link" href="#">Шины</a>
+        <a class="navigation-link" href="tires.html">Шины</a>
         <a class="navigation-link" href="#">Continental</a>
         <a class="navigation-link" href="#">WinterContact TS</a>
         <a class="navigation-link" href="#">
@@ -38,21 +41,33 @@
         >
       </div>
     </section>
+    <div class="header-hidden">
+      <div class="tires-cart__sertification">
+        <div class="tires-cart__sertLogo">
+          <img src="./images/tires/medal.svg" alt="" />
+        </div>
+        <div class="tires-cart__sertTxt">Сертифицированая продукция</div>
+      </div>
+      <div class="tires-cart__ttl ">
+        Continental 205/55 R16 91H WinterContact TS 860
+      </div>
+      <div class="tires-cart__available ">В наличии</div>
+    </div>
     <section class="tires-cart">
       <div>
-        <img src="./images/tires/tires-1.png" />
+        <img class="tires-cart__img" src="./images/tires/tires-1.png" />
       </div>
       <div class="tires-cart__desc">
-        <div class="tires-cart__sertification">
+        <div class="tires-cart__sertification hidden">
           <div class="tires-cart__sertLogo">
             <img src="./images/tires/medal.svg" alt="" />
           </div>
           <div class="tires-cart__sertTxt">Сертифицированая продукция</div>
         </div>
-        <div class="tires-cart__ttl">
+        <div class="tires-cart__ttl hidden">
           Continental 205/55 R16 91H WinterContact TS 860
         </div>
-        <div class="tires-cart__available">В наличии</div>
+        <div class="tires-cart__available hidden">В наличии</div>
         <div class="tires-cart__count">
           <div class="tires-cart__countText">Количество:</div>
           <div class="tires-cart__countInput">
@@ -60,7 +75,15 @@
             <input type="text" placeholder="4" />
             <button>+</button>
           </div>
-          <div class="tires-cart__price">2190 ₴</div>
+          <div class="tires-cart__price hidden">2190 ₴</div>
+        </div>
+        <div class="tires-cart__price mobile">
+          <div>
+            <span>Цена:</span>
+          </div>
+          <div class="tires-cart__txt">
+            <span>2190 ₴</span>
+          </div>
         </div>
           <div class="border"></div>
           <div class="tires-cart__complect">
@@ -68,10 +91,10 @@
             <div class="tires-cart__price">8760 ₴</div>
             <div class="tires-cart__complectCart">
               В корзину
-              <img src="./images/cart.svg"/>
+              <img  src="./images/cart.svg"/>
             </div>
           </div>
-          <div class="shortInfo">
+          <div class="shortInfo hidden">
             <div class="shortInfo-item">
               <img src="./images/shortlists/shortlist-1.svg" alt="" />
               <p>
@@ -107,6 +130,42 @@
         </div>
       </div>
     </section>
+    <div class="short-info__wrapper">
+      <div class="shortInfo mobile">
+        <div class="shortInfo-item">
+          <img src="./images/shortlists/shortlist-1.svg" alt="" />
+          <p>
+            <strong>Доставка</strong><br />
+            По всей<br />
+            Украине
+          </p>
+        </div>
+        <div class="shortInfo-item">
+          <img src="./images/shortlists/shortlist-2.svg" alt="" />
+          <p>
+            <strong>Оплата</strong><br />
+            Наличные,<br />
+            ПриветБанк
+          </p>
+        </div>
+        <div class="shortInfo-item">
+          <img src="./images/shortlists/shortlist-3.svg" alt="" />
+          <p>
+            <strong>Гарантия</strong><br />
+            Возврат
+          </p>
+        </div>
+        <div class="shortInfo-item">
+          <img src="./images/shortlists/shortlist-4.svg" alt="" />
+          <p>
+            <strong>Поддержка</strong><br />
+            Мы работаем<br />
+            24/7
+          </p>
+        </div>
+      </div>
+    </div>
+    
     <section class="additionalLinks">
         <div class="additionalLinks-item">
             <a href="#">Описание</a>
